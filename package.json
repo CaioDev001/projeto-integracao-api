@@ -1,0 +1,27 @@
+{
+  "name": "projeto-integracao-api",
+  "version": "1.0.0",
+  "description": "API para integração entre produtores do Mercado São Sebastião e consumidores",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --detectOpenHandles --forceExit",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "mysql2": "3.6.0",
+    "cors": "2.8.5",
+    "dotenv": "16.3.1"
+  },
+  "devDependencies": {
+    "jest": "29.6.1",
+    "supertest": "6.3.3",
+    "nodemon": "3.0.1"
+  },
+  "keywords": ["api", "integracao", "rest", "mercado", "fortaleza"],
+  "author": "Grupo 06 - N703",
+  "license": "MIT"
+}
