@@ -237,18 +237,4 @@ sudo systemctl status mysql
 netstat -tulpn | grep :3001
 ```
 
-```mermaid
-sequenceDiagram
-    participant S as Servidor
-    participant F as Frontend
-    participant B as Back4App API
-    participant D as Banco de Dados
-
-    S->>F: Preenche formulário consulta
-    F->>B: POST /classes/Consulta
-    B->>D: Insere registro consulta
-    D-->>B: Confirma inserção
-    B-->>F: Dados da consulta criada
-    F-->>S: Confirmação de sucesso
-```
 
